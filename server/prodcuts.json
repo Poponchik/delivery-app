@@ -1,0 +1,164 @@
+
+    [
+        {
+            "photo": "images/big-mak1.png",
+            "name": "Big mac",
+            "price": 80,
+            "shop": {
+                "$oid": "62c6ad6df19a48d585b2e07c"
+            }
+        },
+        {
+            "photo": "images/dabl-burger.jpg",
+            "name": "Dabl burger",
+            "price": 90,
+            "shop": {
+                "$oid": "62c6ad6df19a48d585b2e07c"
+            }
+        },
+        {
+            "photo": "images/chickenburger.jpg",
+            "name": "Chicken burger",
+            "price": 120,
+            "shop": {
+                "$oid": "62c6ad6df19a48d585b2e07c"
+            }
+        },
+        {
+            "photo": "images/ua-dabl-burger.jpg",
+            "name": "Chizburger",
+            "price": 100,
+            "shop": {
+                "$oid": "62c6ad6df19a48d585b2e07c"
+            }
+        },
+        {
+            "photo": "images/king.jpg",
+            "name": "Burger",
+            "price": 120,
+            "shop": {
+                "$oid": "62c6ad6df19a48d585b2e07c"
+            }
+        },
+        {
+            "photo": "images/humburger.jpg",
+            "name": "Humburger",
+            "price": 70,
+            "shop": {
+                "$oid": "62c6ad6df19a48d585b2e07d"
+            }
+        },
+        {
+            "photo": "images/cheeseburger.jpg",
+            "name": "Cheeseburger",
+            "price": 85,
+            "shop": {
+                "$oid": "62c6ad6df19a48d585b2e07d"
+            }
+        },
+        {
+            "photo": "images/steakhouse.jpg",
+            "name": "Steakhouse",
+            "price": 105,
+            "shop": {
+                "$oid": "62c6ad6df19a48d585b2e07d"
+            }
+        },
+        {
+            "photo": "images/big-mak1.png",
+            "name": "Burger",
+            "price": 50,
+            "shop": {
+                "$oid": "62c6ad6df19a48d585b2e07d"
+            }
+        },
+        {
+            "photo": "images/chickenburger.jpg",
+            "name": "Chicken burger",
+            "price": 55,
+            "shop": {
+                "$oid": "62c6ad6df19a48d585b2e07d"
+            }
+        },
+        {
+            "photo": "images/bucket.jpg",
+            "name": "Chicken bucket",
+            "price": 86,
+            "shop": {
+                "$oid": "62c6ad6df19a48d585b2e07e"
+            }
+        },
+        {
+            "photo": "images/Potato.jpg",
+            "name": "Potato",
+            "price": 190,
+            "shop": {
+                "$oid": "62c6ad6df19a48d585b2e07e"
+            }
+        },
+        {
+            "photo": "images/kreamball.jpg",
+            "name": "Kreamball",
+            "price": 98,
+            "shop": {
+                "$oid": "62c6ad6df19a48d585b2e07e"
+            }
+        },
+        {
+            "photo": "images/king.jpg",
+            "name": "Burger",
+            "price": 80,
+            "shop": {
+                "$oid": "62c6ad6df19a48d585b2e07e"
+            }
+        },
+        {
+            "photo": "images/Chicken-Burger.jpg",
+            "name": "Chicken burger",
+            "price": 56,
+            "shop": {
+                "$oid": "62c6ad6df19a48d585b2e07e"
+            }
+        },
+        {
+            "photo": "images/Техас.jpg",
+            "name": "Pizza Texas",
+            "price": 130,
+            "shop": {
+                "$oid": "62c6ad6df19a48d585b2e07f"
+            }
+        },
+        {
+            "photo": "images/panini.jpg",
+            "name": "Panini",
+            "price": 63,
+            "shop": {
+                "$oid": "62c6ad6df19a48d585b2e07f"
+            }
+        },
+        {
+            "photo": "images/hotdog.jpg",
+            "name": "Hot dog",
+            "price": 84,
+            "shop": {
+                "$oid": "62c6ad6df19a48d585b2e07f"
+            }
+        },
+        {
+            "photo": "images/big-mak1.png",
+            "name": "Burger",
+            "price": 104,
+            "shop": {
+                "$oid": "62c6ad6df19a48d585b2e07f"
+            }
+        },
+        {
+            "photo": "images/munhen.jpg",
+            "name": "Pizza day",
+            "price": 120,
+            "shop": {
+                "$oid": "62c6ad6df19a48d585b2e07f"
+            }
+        }
+
+    ]

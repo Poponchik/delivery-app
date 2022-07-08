@@ -1,0 +1,108 @@
+.container {
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.container__inner {
+    padding-top: 24px;
+}
+
+.shop {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shops {
+    text-align: center;
+}
+
+li {
+    cursor: pointer;
+    margin-bottom: 16px;
+    width: 248px;
+    padding: 12px;
+    font-family: "inter";
+    font-size: 18px;
+    color: #464646;
+    border-radius: 4px;
+}
+
+li:hover {
+    background-color: #F5F5F5;
+}
+
+.active_button {
+    background-color: #464646;
+    color: #fff;
+}
+
+.active_button:hover{
+    background-color: #464646;
+    color: #fff;
+}
+
+.items {
+    padding: 20px;
+    background-color: #F4F4F4;
+    width: 705px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    max-height: 410px;
+    overflow-y: scroll;
+}
+
+.item {
+    background-color: #fff;
+    width: 296px;
+    padding: 16px;
+    margin: 0 16px 16px 0;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.description {
+    margin-top: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name_item {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.item_price{
+    display:flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.price{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.add_to_card {
+    width: 108px;
+    height: 33px;
+    font-size: 14px;
+    background-color: #464646;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.add_to_card:hover{
+    background-color: #383737;
+}
+
+.photo{
+    width: 296px;
+    height: 122px;
+    object-fit: cover;
+    border-radius: 4px;
+}

@@ -1,0 +1,193 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border_box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    padding: 0;
+    margin: 0;
+    font-family: "inter";
+}
+
+.welcome {
+    width: 100%;    
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+p {
+    font-size: 13px;
+}
+
+ul,
+li {
+    display: block;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+}
+
+input[type=radio] {
+    bottom: 2px;
+}
+
+
+
+.container_inner {
+    display: flex;
+    justify-content: space_between;
+}
+
+.form_section {
+    margin: 40px auto 0 auto;
+}
+
+.form {
+    margin-top: 40px;
+    width: 360px;
+
+}
+
+.body {
+    margin-top: 50px;
+}
+
+.illustration {
+    width: 40rem;
+}
+
+.checkbox_input {
+    margin: 0;
+    padding: 0;
+
+}
+
+.password {
+    margin-top: 16px;
+}
+
+.input {
+    margin-top: 4px;
+    width: 100%;
+    width: 340px;
+    height: 35px;
+    padding-right: 0;
+    padding-left: 12px;
+    left: 0%;
+    right: 0%;
+    top: 36%;
+    bottom: 0%;
+    background: #FFFFFF;
+    border: 1px solid #B6B6B6;
+    border-radius: 4px;
+}
+
+input::placeholder {
+    font-size: 14px;
+}
+
+.input:focus {
+    /* color: #3333; */
+    background-color: #fff; 
+    border-color: #000000;
+    outline: 0;
+    /* box_shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25); */
+  }
+
+.remember_block {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.password_options {
+    margin-top: 10px;
+    width: 100%;   
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    font-size: 13px;
+    font-weight: 500;
+    color: #464646;
+    cursor: pointer;
+
+}
+
+.link:hover {
+    color:#323232;
+  }
+
+.sign_in {
+    margin-top: 24px;
+    border-radius: 4px;
+    padding: 12px 156px;
+    background-color: #464646;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+
+.sign_up{
+    margin-top: 24px;
+    border-radius: 4px;
+    padding: 12px 153px;
+    background-color: #464646;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+
+.sign_up:hover {
+    background-color: #323232;
+    color: white;
+}
+
+.sign_in:hover {
+    background-color: #323232;
+    color: white;
+}
+
+
+
+@media only screen and (max_width: 1200px) {
+    .header img {
+        display: none;
+    }
+}
+
+.create_account{
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.link_create{
+    margin-left: 4px;
+}
+
+.burger{
+    height: 600px;
+    object-fit: cover;
+    width: 600px;
+}
