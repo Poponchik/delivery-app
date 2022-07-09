@@ -187,7 +187,7 @@ input::placeholder {
 }
 
 .burger{
-    height: 600px;
+    height: 100vh;
     object-fit: cover;
     width: 600px;
 }
