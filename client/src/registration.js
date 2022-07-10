@@ -18,7 +18,7 @@ function Registration() {
                 },
                 body: JSON.stringify({ email, password })
             });
-            const dataFromServer = await response.json()
+            
             if(!response.ok) {
                 return alert(response.message)
             }

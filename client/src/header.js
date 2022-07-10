@@ -10,11 +10,12 @@ function Header() {
 
     const [login, setLogin] = useState(() => {
         const userData = JSON.parse(localStorage.getItem('userData'))
-        if(!userData || !userData.accessToken) return ''
+        if (!userData || !userData.accessToken) return ''
+
         return userData.accessToken
     })
 
-    function logout (){
+    function logout() {
         localStorage.removeItem('userData')
         setLogin('')
     }
@@ -35,9 +36,9 @@ function Header() {
             </div>
             <div className="icons">
                 {login ? <div>
-                    
-                        <BiLogOutCircle size={28} className={styles.logout} onClick={logout}/>
-                    
+
+                    <BiLogOutCircle size={28} className={styles.logout} onClick={logout} />
+
                     <MdAccountBox size={28} />
                 </div>
 

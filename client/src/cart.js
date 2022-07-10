@@ -17,9 +17,23 @@ function ShoppingCart() {
     const [phone, setPhone] = useState('')
     const [email, setEmail] = useState('')
     const [address, setAddress] = useState('')
+    const [claims, setClaims] = useState('')
     const [sum, setSum] = useState(cart.reduce((acc, element) => {
         return acc + element.item.price * element.quantity
     }, 0))
+
+    function getEmail() {
+        const userData = JSON.parse(localStorage.getItem('userData'))
+        if (!userData) return
+        const jwt = userData.accessToken
+        setClaims(JSON.parse(atob(jwt.split('.')[1])))
+        setEmail(JSON.parse(atob(jwt.split('.')[1])).email)
+    }
+
+    useEffect(() => {  
+        getEmail()
+    }, [])
+
 
     function changeQuantity(item, operator) {
         const itemInCartIndex = cart.findIndex(element => element.item._id === item._id)
@@ -53,7 +67,7 @@ function ShoppingCart() {
     }
 
     async function createOrder() {
-        if(!name || !phone || !email || !address || !cart.length) return
+        if (!name || !phone || !email || !address || !cart.length) return
         await fetch(`${config.serverUrl}/orders`, {
             method: 'POST',
             headers: {
@@ -81,7 +95,10 @@ function ShoppingCart() {
         localStorage.removeItem('cart')
         alert('Thanks for order!')
 
+
+
     }
+
 
     return (
         <div className={styles.container} id="container">
@@ -101,8 +118,10 @@ function ShoppingCart() {
                             </div>
                             <div className={styles.input_info}>
                                 <p className={styles.delivery_info}>Email</p>
-                                <input className={styles.input} value={email} onChange={(event) => setEmail(event.target.value)} />
+                                <input disabled={claims.email} className={styles.input} value={email} onChange={(event) => setEmail(event.target.value)} />
                             </div>
+
+
                             <div className={styles.input_info}>
                                 <p className={styles.delivery_info}>Address</p>
                                 <input className={styles.input} value={address} onChange={(event) => setAddress(event.target.value)} />
@@ -119,7 +138,7 @@ function ShoppingCart() {
                             {
                                 cart.map(element => {
                                     return <div key={element.item._id} className={styles.item}>
-                                        <img className={styles.photo}  src={`${config.serverUrl}/${element.item.photo}`} alt="burger" />
+                                        <img className={styles.photo} src={`${config.serverUrl}/${element.item.photo}`} alt="burger" />
                                         <div className={styles.description}>
                                             <div className={styles.title_item}>
                                                 <h4 className={styles.name_item}>{element.item.name}</h4>
